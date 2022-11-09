@@ -1,0 +1,74 @@
+# develop-a-model-to-predict-the-sale-price-of-a-house
+develop a model to predict the sale price of a house
+housePrice=read.csv("F:\\study_note\\3rd year\\ST301\\A\\housePrice.csv")
+housePrice
+variable.names(housePrice)
+housePrice=read.csv("F:\\study_note\\3rd year\\ST301\\A\\housePrice.csv")
+variable.names(housePrice)
+summary(lm(soldPrice ~ sqftLiving, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLand, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftAbove, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftBasement, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ numBedRooms, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ numBathRooms, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ numFloors, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ builtYear, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ grade, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ waterFront, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ condition, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+sqftLand, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+sqftAbove, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+sqftBasement, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+numBedRooms, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+numBathRooms, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+numFloors, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+grade, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+waterFront, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+sqftLand, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+sqftAbove, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+sqftBasement, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+numBedRooms, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+numBathRooms, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+numBathRooms, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving++builtYear+numFloors, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving++builtYear+grade, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+waterFront, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+sqftLand, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+sqftAbove, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+sqftBasement, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+numBedRooms, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+numBathRooms, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+numFloors, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+condition, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+sqftLand, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+sqftAbove, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+sqftBasement, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBathRooms, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numFloors, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+condition, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+sqftLand, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+sqftAbove, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+sqftAbove, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+sqftBasement, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numBathRooms, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+condition, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+sqftLand, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+sqftAbove, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+sqftBasement, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+numBathRooms, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+condition, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+numBathRooms+sqftLand, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+numBathRooms+sqftAbove, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+numBathRooms+sqftBasement, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+numBathRooms+condition, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+numBathRooms+sqftAbove+sqftLand, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+numBathRooms+sqftAbove+sqftBasement, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+numBathRooms+sqftAbove+condition, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+numBathRooms+sqftAbove+sqftLand+sqftBasement, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+numBathRooms+sqftAbove+sqftLand+condition, data = housePrice))$adj.r.squared
+summary(lm(soldPrice ~ sqftLiving+builtYear+grade+waterFront+numBedRooms+numFloors+numBathRooms+sqftAbove+sqftLand+condition+sqftBasement, data = housePrice))$adj.r.squared
+plot(c(1,2,3,4,5,6,7,8,9,10,11),c(0.4940643,0.5205632,0.5485533,0.5679138,0.5829823,0.5893767,0.5924343,0.5942811,0.5949049,0.5952841,0.5952841))
